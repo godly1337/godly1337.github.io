@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Suez+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color:#303030;
+    font-family: 'Trebuchet MS', Helvetica;
+}
+
+header{
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo{
+    color: #fff;
+    cursor: pointer;
+}
+
+header #logo span{
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Suez One', serif;
+}
+
+@media (min-width: 701px)
+{
+    #logo {
+        width: 30%;
+        font-size: 1.1em;
+    }
+
+    #about{
+        float: left;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px)
+{
+    #logo {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    #about{
+        float: left;
+        width: 100%;
+    }
+}
+
+#about{
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+
+}
+
+#about > a {color: #fff}
+
+#about > a:hover{
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+
+#about > a:not(:last-child){
+    margin-right: 3%;
+}
+
+#time{
+    color: #fff;
+    margin-right: 3%;
+    margin-top: -3%;
+    text-align: right;
+    background: transparent;
+}
+
+.fixed{
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo{
+    color: #343434;
+}
+header.fixed #time{
+    color: #343434;
+}
+
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #7c7c7c}
+
+
+#main {
+    width: 100%;
+    background-image: url(https://rare-gallery.com/uploads/posts/504973-minimalist-working.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+@media (min-width: 1001px){
+    #main {
+        font-size: 3em;
+        height: 1000px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px){
+    #main {
+        font-size: 2em;
+        height: 600px;
+    }
+}
+
+@media (max-width: 650px){
+    #main {
+        font-size: 1.3em;
+        padding-top: 50%;
+        height: 500px;
+    }
+}
+
+#main h1{
+    padding-top: 20%;
+
+}
+#main h3{
+    color:#ccc; 
+}
+
+#lessons{
+
+
+    background-color: #fff;
+    color: black;
+    font-size: 1em;
+    height: 100%;
+    width: 20%;
+
+    padding: 15px 15px 40px;
+    float: center;
+    position: relative;
+    z-index: 5;
+    border-radius: 20px;
+
+    max-width: 1360px;
+    margin: -45% auto 0;
+    background: #fff;
+
+    margin-right: 78%;
+
+}
+#lessons > span > a{
+    color: #343434;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#lessons a{font-size: 1.3em; font-weight: bold;}
+#lessons h4{font-size: 0.8em; font-weight:400;}
+#lessons > span > #L2{
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#lessons > span > #L2:hover{
+    color: crimson;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#lessons > span > a:hover{
+    color: crimson;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+#LP1{
+
+
+    background-color: #fff;
+    color: black;
+    font-size: 1em;
+    height: 900px;
+    width: 60%;
+
+    padding: 15px 15px 40px;
+    float: center;
+    position: relative;
+    z-index: 100;
+    border-radius: 20px;
+
+    max-width: 1360px;
+    margin: -950px auto 0;
+    background: #fff;
+
+    margin-right: 15%;
+
+}

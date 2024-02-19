@@ -1,0 +1,63 @@
+.Lessonpages h1{
+    text-align: center;
+}
+
+.Lessonpages .L_title{
+    font-size: 1.5em;
+}
+
+.Lessonpages .text{
+    font-size: 1.1em;
+}
+.imp{
+    font-size: 1.1em;
+    text-decoration: underline;
+    font-weight: 1000;
+}
+.Lessonpages .code{
+    line-height: 1;
+    display: inline-block;
+    margin-right: 4px;
+    padding: 3px 6px;
+    font-family: monospace;
+    font-family: 'Anonymous Pro', monospace;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #2c292d;
+    white-space: nowrap;
+    display: block;
+    overflow: auto;
+    padding: 15px 25px;
+    line-height: 1.5;
+}
+
+
+
+.grey {
+    color: #a9a9a9
+}
+
+.blue {
+    color: #78dce9
+}
+
+.green {
+    color: #aadc76
+}
+
+#down:active,.red {
+    color: #ff6189
+}
+
+.orange {
+    font-style: italic;
+    color: #fc9968!important;
+}
+
+.purple {
+    color: #aa9ef2
+}
+
+.yellow {
+    color: #ffd865;
+}

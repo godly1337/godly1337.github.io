@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonLearning</title>
+    <link rel="stylesheet" href="css/Lesson1.css">
+    <link rel="stylesheet" href="css/Lessons.css">
+</head>
+<body> 
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>PythonLearning</span>
+        </div><br>
+        <div id="about">
+            <a>   </a>
+            <a href="Main.html" title="Новости" onclick="slowScroll('#news')">-Новости-</a>
+            <a href="Lesson1.html" title="Курсы" onclick="slowScroll('#courses')">-Курсы-</a>
+            <a  title="Группы" onclick="slowScroll('#groups')">-Группы-</a>
+        </div>
+        <div id="time">00:00:00</div>
+    </header>
+
+    <div id="main"></div>
+
+    <div id="lessons">
+        <span>
+            <a id="L1" class="Lessons" href="Lesson1.html" target="_self" onclick="OnClick(this)">-Урок 1
+            <h4 id="L1" class="Lessons">Введение в Python</h4></a>
+            <br>
+            <a id="L2" class="Lessons" href="Lesson2.html" target="_self" onclick="OnClick(this)">-Урок 2
+            <h4 id="L2" class="Lessons">Арифметические действия</h4></a>
+        </span>
+    </div>
+
+    <div id="LP1" class="Lessonpages">
+        <h1>
+            Урок 1 Введение в Python
+        </h1><br><br>
+        <p class="L_title">1.Ввод и вывод данных</p><br>
+        <p class="text">Для вывода значений в Python есть функция <b class="imp">print()</b>.
+        Внутри круглых скобок через запятую мы пишем то, что хотим вывести.</p><br>
+
+        <div class="code"> 
+            <span><span class="blue">print</span>(<span class="yellow">"Hello python"</span>)</span><br>
+            <span><span class="blue">print</span>(5 + 5)</span><br>
+            <span><span class="blue">print</span>(1, 2, 3)</span><br>
+
+        </div><br>
+        <p class="text">Для ввода данных в программу мы 
+        используем функцию <b class="imp">input()</b>.
+         Она считывает одну строку.</p><br>
+
+         <div class="code"> 
+            <span><span class="blue">print</span>(<span class="yellow">"Как вас зовут?"</span>)</span><br>
+            <span>name = <span class="blue">input</span>()  <span class="green">// считываем строку и кладём её в переменную name</span></span><br>
+            <span>(<span class="yellow">"Здравствуйте, "</span> + name)</span><br>
+
+        </div><br>
+
+        <p class="L_title">1.Типы данных</p><br>
+        <p class="text">В Python есть 4 примитивных типа данных:
+            <b class="imp"><br> int<br> float<br> string<br> bool</b>,  
+        </p><br>
+        
+        <div class="code"> 
+            <span class="green">// int (целые числа)</span>
+            age = 15
+            <br><br>
+
+            <span class="green">//float (дробные числа)</span>
+            fraction = 2.33
+            <br><br>
+
+            <span class="green">//str (строки)</span>
+            fruit = "snake"
+            <br><br>
+
+            <span class="green">//bool (правда или ложь)</span>
+            isReady = True <span class="green">//всего два значения: True и False</span>
+            <br>
+
+        </div><br>
+
+    </div>
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id)
+        {
+            $('html', 'body').animate({
+                scrollTop: $(id).offset().top
+
+            }, 500)
+        }
+
+        $(document).on("scroll", function() {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+    
+
+    <script src="java\Lesson1.js"></script>
+    <script src="java\TimeShow.js"></script>
+</body> 
+</html>

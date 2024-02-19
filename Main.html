@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonLearning</title>
+    <link rel="stylesheet" href="css/Main.css">
+</head>
+<body> 
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>PythonLearning</span>
+        </div><br>
+        <div id="about">
+            <a>   </a>
+            <a href="Main.html" title="Новости" onclick="slowScroll('#news')">-Новости-</a>
+            <a href="Lesson1.html" title="Курсы" onclick="slowScroll('#courses')">-Курсы-</a>
+            <a  title="Группы" onclick="slowScroll('#groups')">-Группы-</a>
+        </div>
+        <div id="time">00:00:00</div>
+    </header>
+
+    <div id="main"></div>
+
+    <div id="newspage">
+        <span>
+            This is a test version
+        </span>
+        <a>v1.0</a>
+    </div>
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id)
+        {
+            $('html', 'body').animate({
+                scrollTop: $(id).offset().top
+
+            }, 500)
+        }
+
+        $(document).on("scroll", function() {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+    <script src="java\TimeShow.js"></script>
+    
+</body> 
+</html>
